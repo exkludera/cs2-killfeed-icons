@@ -146,10 +146,10 @@ can be found in `game/csgo/panorama/images/icons/equipment` with [Source2 Viewer
 > [!WARNING]
 > add `"include" "panorama/images/icons/equipment"` at the bottom of your gameinfo.gi before uploading addon
 >
-> also don't forget to remove it when you're done uploading or you wont be able to join servers
+> also don't forget to remove it when you're done or you wont be able to join servers
 
-to make a own icon you have to upload a .svg file to that path in your addon <br>
-`"Icon": "YOUR-ICON"` = your-addon/panorama/images/icons/equipment/YOUR-ICON.svg
+to make your own icon you have to upload a .svg file to that path in your addon <br>
+`"Icon": "YOUR-ICON"` = content/your-addon/panorama/images/icons/equipment/YOUR-ICON.svg
 
 ## example config
 ```json
