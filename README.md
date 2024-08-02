@@ -144,7 +144,7 @@ can be found in `game/csgo/panorama/images/icons/equipment` with [Source2 Viewer
 <br>
 
 > [!WARNING]
-> when uploading to your addon you have to edit gameinfo.gi and add `"include" "panorama/images/icons/equipment"` at the bottom
+> add `"include" "panorama/images/icons/equipment"` at the bottom of your gameinfo.gi before uploading addon
 >
 > also don't forget to remove it when you're done uploading or you wont be able to join servers
 
