@@ -66,14 +66,14 @@ public partial class Plugin : BasePlugin, IPluginConfig<Config>
     {
         var attacker = @event.Attacker;
 
-        if (attacker == null || !attacker.IsValid || attacker.Connected == PlayerConnectedState.PlayerConnected)
+        if (attacker == null || !attacker.IsValid || attacker.Connected != PlayerConnectedState.PlayerConnected)
             return HookResult.Continue;
 
         foreach (var weapon in Config.Icons)
         {
-            string weaponName = weapon.Key;
+            string weaponName = weapon.Key.ToLower();
             var icon = weapon.Value;
-            if (weapon.Equals(weaponName.ToLower()) && HasPermission(attacker, icon))
+            if (@event.Weapon.ToLower().Contains(weaponName) && HasPermission(attacker, icon))
             {
                 @event.Weapon = icon.Icon;
                 break;
