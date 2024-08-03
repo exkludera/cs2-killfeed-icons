@@ -14,7 +14,7 @@ ammobox<br>
 ammobox_threepack<br>
 armor<br>
 armor_helmet<br>
-assaultsui<br>
+assaultsuit<br>
 assaultsuit_helmet_only<br>
 aug<br>
 awp<br>
