@@ -151,16 +151,6 @@ to make your own icon you have to upload a .svg file to that path in your addon 
 
 Default: `0` (0 = default, 1 = force enable, 2 = force disable)
 
-**Headshot** <br>
-**ThroughSmoke** <br>
-**NoScope** <br>
-**AssistedFlash** <br>
-**AttackerBlind** <br>
-**AttackerInAir** <br>
-**Penetrated** <br>
-**Dominated** <br>
-**SquadWipe** <br>
-
 ```json
 {
   "Headshot": 0,
