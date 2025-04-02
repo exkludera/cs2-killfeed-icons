@@ -134,7 +134,7 @@ can be found in `game/csgo/panorama/images/icons/equipment` with [Source2 Viewer
 ## information:
 
 ### requirements
-- [MetaMod](https://cs2.poggu.me/metamod/installation)
+- [MetaMod](https://github.com/alliedmodders/metamod-source)
 - [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp)
 
 <br>
@@ -148,16 +148,41 @@ to make your own icon you have to upload a .svg file to that path in your addon 
 `"Icon": "YOUR-ICON"` = content/your-addon/panorama/images/icons/equipment/YOUR-ICON.svg
 
 ## example config
+
+Default: `0` (0 = default, 1 = force enable, 2 = force disable)
+
+**Headshot** <br>
+**ThroughSmoke** <br>
+**NoScope** <br>
+**AssistedFlash** <br>
+**AttackerBlind** <br>
+**AttackerInAir** <br>
+**Penetrated** <br>
+**Dominated** <br>
+**SquadWipe** <br>
+
 ```json
 {
+  "Headshot": 0,
+  "ThroughSmoke": 0,
+  "NoScope": 0,
+  "AssistedFlash": 0,
+  "AttackerBlind": 0,
+  "AttackerInAir": 0,
+  "Penetrated": 0,
+  "Dominated": 0,
+  "SquadWipe": 0,
   "Icons": {
     "knife": {
-      "Icon": "knife"
+      "Icon": "prop_exploding_barrel"
     },
     "awp": {
-      "Icon": "awp",
-      "Permission": "@css/reservation",
+      "Icon": "dronegun",
+      "Permission": ["@css/reservation", "#css/vip"],
       "Team": "T"
+    },
+    "*": {
+      "Icon": "movelinear"
     }
   }
 }
